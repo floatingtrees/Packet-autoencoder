@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+
+# Sample data
+products = ['Product A', 'Product B', 'Product C']
+sales_q1 = [150, 200, 250]
+sales_q2 = [180, 220, 270]
+
+# Create a figure with two subplots
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+
+# First bar graph
+ax1.bar(products, sales_q1, color='blue')
+ax1.set_title('Sales in Q1')
+ax1.set_xlabel('Products')
+ax1.set_ylabel('Sales')
+
+# Second bar graph
+ax2.bar(products, sales_q2, color='green')
+ax2.set_title('Sales in Q2')
+ax2.set_xlabel('Products')
+ax2.set_ylabel('Sales')
+
+# Display the plots
+plt.tight_layout()
+plt.show()

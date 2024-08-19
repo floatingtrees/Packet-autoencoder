@@ -21,7 +21,7 @@ ydf = np.asarray(pd.read_csv("Video_Injection_labels.csv", nrows = datasize), dt
 
 
 X_train, X_test, y_train, y_test = train_test_split(xdf, ydf, test_size = 0.1, random_state=1)
-clf = RandomForestClassifier(n_estimators = 21, max_depth=5, random_state=42)
+clf = RandomForestClassifier(n_estimators = 35, max_depth=5, random_state=42)
 clf.fit(X_train, y_train)
 
 t1 = clf.predict(X_test) 

@@ -7,8 +7,6 @@ from sklearn.metrics import confusion_matrix, precision_score, recall_score
 
 
 
-
-
 datasize = 10000000000000
 
 ydf = np.asarray(pd.read_csv("Video_Injection_labels.csv", nrows = datasize), dtype=np.int32)[1:, 1]
